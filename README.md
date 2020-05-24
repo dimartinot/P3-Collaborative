@@ -5,8 +5,8 @@
 
 ## Environment
 
-In the context of the *Reacher* environment, our agent is an arm with two joints that needs to move to different target locations, modelized by a round 3D Green ball rotating around the arm's extremity. 
-The Reacher environment of the agent is highly similar to the one developed by Unity in the following sets of learning environment: [Unity Reacher](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#reacher)
+In the context of the *Tennis* environment, two agents move rackets on a tennis field to bounce a ball over a net, delimiting their respective areas.
+The goal of the agents is to keep the ball up in the air (not to score a goal by making it fall in the adversary field). This environment is highly similar to the one developed by Unity in the following sets of learning environment: [Tennis](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Learning-Environment-Examples.md#tennis)
 
 ### States
 To capture is knowledge of the environment, our agent has an observation space of size 24. Amongst all the variables making up this vector, we can count the position of the ball, the velocity of the racket.
@@ -82,19 +82,3 @@ This project is made of two main jupyter notebooks using classes spread in multi
   <figcaption style="text-align:center;font-style:italic"><i><small>Plot of the score (blue end of episode score, orange moving average score) for a DPPG agent trained with uniform replay buffer</small></i></figcaption>
   <br>
 </figure> 
- 
- - `actor_weights_prioritised_replay_buffer.pth` & `critic_weights_prioritised_replay_buffer.pth`: these are the weights of an agent trained with experience tuple sampled using their *importance* in the learning process.
-
- <figure style="  float: right;
-   width: 30%;
-   text-align: center;
-   font-style: italic;
-   font-size: smaller;
-   text-indent: 0;
-   border: thin silver solid;
-   margin: 0.5em;
-   padding: 0.5em;">
-  <img src="results_prioritized_replay_buffer.png" alt="Results Prioritized Replay Buffer" style="width:100%">
-  <figcaption><i><small>Plot of the score (blue end of episode score, orange moving average score) for a DPPG agent trained with prioritised replay buffer</small></i></figcaption>
-</figure> 
-

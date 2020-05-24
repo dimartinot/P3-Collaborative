@@ -63,8 +63,8 @@ This project is made of two main jupyter notebooks using classes spread in multi
  - `model.py`: Contains the PyTorch class definition of the Actor and the critic neural networks, used by their mutual target and local network's version;
 
 ### PyTorch weights
-4 weight files are provided, two for each agent (critic + actor): as they implement the same model, they are interchangeable. However, as a different training process has been used, I found it interesting to compare the resulting behaviour of the agent:
- - `actor_weights_simple_replay_buffer.pth` & `critic_weights_simple_replay_buffer.pth`: these are the weights of a *common* ddpg agent using a uniformly distributed replay buffer.
+4 weight files are provided, two for each agents (critic + actor):
+- `checkpoint_actor_local_{agent_id}.pth` & `checkpoint_critic_local_{agent_id}.pth`: these are the weights of a *common* ddpg agent using a uniformly distributed replay buffer where `{agent_id}` is to be replaced by either 0 or 1, depending on the agent to instantiate.
  
  
  <figure style="  

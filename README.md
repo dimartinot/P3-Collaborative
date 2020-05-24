@@ -78,7 +78,7 @@ This project is made of two main jupyter notebooks using classes spread in multi
    margin: 0.5em;
    padding: 0.5em;
   ">
-  <img src="results_simple_replay_buffer.png" alt="Results Simple Replay Buffer" style="width:100%">
-  <figcaption style="text-align:center;font-style:italic"><i><small>Plot of the score (blue end of episode score, orange moving average score) for a DPPG agent trained with uniform replay buffer</small></i></figcaption>
+  <img src="perf.png" alt="Results Simple Replay Buffer" style="width:100%">
+  <figcaption style="text-align:center;font-style:italic"><i><small>Plot of the score (blue end of episode score, orange moving average score) for a MADPPG algorithm trained with uniform replay buffer</small></i></figcaption>
   <br>
 </figure> 

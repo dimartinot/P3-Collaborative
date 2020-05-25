@@ -36,7 +36,7 @@ When training the agent, it is considered successful to the eyes of the assignme
 Clone this GitHub repository, create a new conda environment and install all the required libraries using the frozen `conda_requirements.txt` file.
 ```shell
 $ git clone https://github.com/dimartinot/P3-Collaborative.git
-$ cd P2-Collaborative/
+$ cd P3-Collaborative/
 $ conda create --name drlnd --file conda_requirements.txt
 ``` 
 
